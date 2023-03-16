@@ -4,6 +4,7 @@ import Dashboard from './Dashboard';
 import Games from './Games';
 import Users from './Users';
 import Location from './Location';
+import Website from './Website';
 
 export default [
     Dashboard,
@@ -12,4 +13,5 @@ export default [
     Users,
     Analytics,
     Location,
+    Website,
 ];
