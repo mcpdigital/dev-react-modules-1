@@ -33,7 +33,7 @@ const MapContainer = ({ google }) => {
   return (
     <div>
       <form onSubmit={handleLocationSubmit}>
-        <input type="text" value={location} onChange={handleLocationChange} />
+        <input type="text" placeholder="Type a location to find coordinates" value={location} onChange={handleLocationChange} />
         <button type="submit">Search</button>
       </form>
       <div class='latlong'>

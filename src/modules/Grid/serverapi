@@ -1,0 +1,19 @@
+const express = require('express');
+const fs = require('fs');
+
+const app = express();
+
+app.get('/api/items', (req, res) => {
+  const htmlFiles = fs.readdirSync('./static').filter(file => file.endsWith('.html'));
+
+  const items = htmlFiles.map((file, index) => ({
+    url: `/static/${file}`,
+    thumbnail: `/static/${index}.jpg`
+  }));
+
+  res.json(items);
+});
+
+app.listen(3000, () => {
+  console.log('Server listening on port 3001');
+});

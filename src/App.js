@@ -12,8 +12,11 @@ function App() {
   return (
       <Router>
         <div className="App">
+        <div className="Title"><h1>PROJECTS</h1></div>
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
+            
+            
             <ul className="App-nav">
               {modules.map(module => (
                   <li key={module.name} className={currentTab === module.name ? 'active' : ''}>
