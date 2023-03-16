@@ -1,13 +1,16 @@
 import React from 'react';
+import MapContainer from './src/MapContainer';
 
-const Games = () => (
-    <div>Location Module</div>
+const Location = () => (
+    <><div>Location Module</div><div className="App">
+        <MapContainer />
+    </div></>
 );
 
 export default {
     routeProps: {
         path: '/location',
-        component: Games,
+        component: Location,
     },
     name: 'Location',
 };
