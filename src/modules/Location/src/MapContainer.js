@@ -43,7 +43,9 @@ const MapContainer = ({ google }) => {
       <p>
         Longitude: {lng}
       </p>
+      <p></p>
       </div>
+      <div>
       {lat && lng && (
         <Map
           google={google}
@@ -51,10 +53,14 @@ const MapContainer = ({ google }) => {
           style={mapStyles}
           initialCenter={{ lat, lng }}
           center={{ lat, lng }}
+          darkMode={true}
+          theme={'dark'}
+          
         >
           <Marker position={{ lat, lng }} />
         </Map>
       )}
+      </div>
     </div>
   );
 };

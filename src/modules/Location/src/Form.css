@@ -28,6 +28,8 @@ div.latlong {
 p {
   font-size: 20px;
   margin-left: 10px;
+  margin-bottom: 3px;
+  margin-top: 3px;
 }
 
 /* Set the font family and font color for the form */
