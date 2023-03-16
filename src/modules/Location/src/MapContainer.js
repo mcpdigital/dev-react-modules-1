@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import axios from 'axios';
+import './Form.css';
 
 const mapStyles = {
   width: '100%',
@@ -35,13 +36,14 @@ const MapContainer = ({ google }) => {
         <input type="text" value={location} onChange={handleLocationChange} />
         <button type="submit">Search</button>
       </form>
-      
+      <div class='latlong'>
       <p> 
         Latitude: {lat}
       </p>
       <p>
         Longitude: {lng}
       </p>
+      </div>
       {lat && lng && (
         <Map
           google={google}

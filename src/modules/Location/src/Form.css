@@ -1,0 +1,73 @@
+/* Set the background color of the form */
+form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 35%;
+  margin: auto;
+}
+
+div.latlong {
+  display: flex;
+  max-width: 30%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  background-color: #113b5c;
+  text-align: left;
+  border-radius: 10px;
+}
+
+
+
+
+p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+/* Set the font family and font color for the form */
+form {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Set the color and style for the form labels */
+label {
+  color: #888;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Set the color, style, and width for the form inputs */
+input[type=text],
+input[type=email],
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Set the background color and border style for the submit button */
+input, button[type=submit] {
+  background-color: #2196F3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Set the hover effect for the submit button */
+input[type=submit]:hover {
+  background-color: #0c7cd5;
+}
