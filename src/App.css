@@ -32,6 +32,8 @@ a:link, a:visited, a:hover, a:active {
 .App-nav {
   display: flex;
   justify-content: space-evenly;
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .App-nav li {
